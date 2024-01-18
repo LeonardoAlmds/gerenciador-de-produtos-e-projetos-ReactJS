@@ -1,0 +1,14 @@
+.btn {
+  z-index: 1;
+  font-weight: 600;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  padding: 0.7em 2em;
+  text-decoration: none;
+  transition: 0.3s;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  color: var(--color-hover);
+}

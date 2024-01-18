@@ -1,0 +1,28 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-secondary);
+  padding: 1em;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.item {
+  margin-right: 1em;
+}
+
+.item a {
+  color: var(--color-primary);
+  text-decoration: none;
+  animation: ease-in-out;
+  transition: 0.3s;
+  font-weight: 500;
+}
+.item a:hover {
+  color: var(--color-hover);
+}
