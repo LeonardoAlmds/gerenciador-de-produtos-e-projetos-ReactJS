@@ -20,7 +20,7 @@
   color: var(--color-primary);
   text-decoration: none;
   animation: ease-in-out;
-  transition: 0.3s;
+  transition: 0.5s;
   font-weight: 500;
 }
 .item a:hover {

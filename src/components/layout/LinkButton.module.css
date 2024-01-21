@@ -5,10 +5,10 @@
   color: var(--color-primary);
   padding: 0.7em 2em;
   text-decoration: none;
-  transition: 0.3s;
+  transition: .5s;
   border-radius: 3px;
 }
 
 .btn:hover {
-  color: var(--color-hover);
+  background-color: var(--color-hover);
 }

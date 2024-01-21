@@ -5,7 +5,8 @@
   --color-primary: #f0f3f5;
   --color-secondary: #2c3439;
   --color-third: #fafbfc;
-  --color-hover: rgb(22, 162, 255);
+  --color-four: #D9E2E8;
+  --color-hover: #16a2ff;
 }
 
 * {

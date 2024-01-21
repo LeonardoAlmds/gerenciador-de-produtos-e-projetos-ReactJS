@@ -1,6 +1,6 @@
 import styles from "./Home.module.css";
 import LinkButton from "../layout/LinkButton";
-import loading from "../../img/loading.svg";
+import home from "../../img/home.svg";
 
 function Home() {
   return (
@@ -9,8 +9,11 @@ function Home() {
         Bem-vindo ao <span>YouX</span>
       </h1>
       <p>Comece a garantir os seus projetos agora mesmo</p>
-      <LinkButton to="/newproject" text="Criar Projeto" />
-      <img src={loading} alt="YouX" />
+      <div className={styles.btn_adjustment}>
+        <LinkButton to="/newproject" text="Criar Projeto" />
+        <LinkButton to="/projects" text="Meus Projetos" />
+      </div>
+      <img src={home} alt="YouX" />
     </section>
   );
 }

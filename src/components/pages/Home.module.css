@@ -30,3 +30,11 @@
   margin-top: -2em;
   z-index: 0;
 }
+
+.btn_adjustment {
+  z-index: 1;
+}
+
+.btn_adjustment a {
+  margin: 1.8em;
+}
