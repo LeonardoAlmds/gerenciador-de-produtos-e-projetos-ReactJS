@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
-import Container from "./Container";
-import styles from "./Navbar.module.css";
-import logo from "../../img/logoipsum.svg";
+import { Link } from 'react-router-dom';
+import Container from './Container';
+import styles from './Navbar.module.css';
+import logo from '../../img/logoipsum.svg';
 
 function Navbar() {
   return (
@@ -19,7 +19,7 @@ function Navbar() {
             <Link to="/projects">Projetos</Link>
           </li>
           <li className={styles.item}>
-            <Link to="/company">Empresa</Link>
+            <Link to="/products">Produtos</Link>
           </li>
           <li className={styles.item}>
             <Link to="/contact">Contato</Link>

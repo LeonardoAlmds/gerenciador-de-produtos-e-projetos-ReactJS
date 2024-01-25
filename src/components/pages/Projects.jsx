@@ -1,31 +1,31 @@
-import { useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
-import styles from "./Projects.module.css";
+import styles from './Projects.module.css';
 
-import Message from "../layout/Message";
-import LinkButton from "../layout/LinkButton";
-import Container from "../layout/Container";
-import ProjectCard from "../project/ProjectCard";
-import Loading from "../layout/Loading";
+import Message from '../layout/Message';
+import LinkButton from '../layout/LinkButton';
+import Container from '../layout/Container';
+import ProjectCard from '../project/ProjectCard';
+import Loading from '../layout/Loading';
 
 function Projects() {
   const [projects, setProjects] = useState([]);
   const [removeLoader, setRemoveLoader] = useState(false);
-  const [projectMessage, setProjectMessage] = useState('')
+  const [projectMessage, setProjectMessage] = useState('');
 
   const location = useLocation();
-  let message = "";
+  let message = '';
   if (location.state) {
     message = location.state.message;
   }
 
   useEffect(() => {
     setTimeout(() => {
-      fetch("http://localhost:5000/projects", {
-        method: "GET",
+      fetch('http://localhost:5000/projects', {
+        method: 'GET',
         headears: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
       })
         .then((resp) => resp.json())
@@ -39,17 +39,17 @@ function Projects() {
 
   function removeProject(id) {
     fetch(`http://localhost:5000/projects/${id}`, {
-      method: "DELETE",
+      method: 'DELETE',
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
     })
-      .then(resp => resp.json())
+      .then((resp) => resp.json())
       .then((data) => {
-        setProjects(projects.filter((project) => project.id !== id))
-        setProjectMessage('Projeto removido com sucesso!!')
+        setProjects(projects.filter((project) => project.id !== id));
+        setProjectMessage('Projeto removido com sucesso!!');
       })
-      .catch(err => console.log(err));
+      .catch((err) => console.log(err));
   }
 
   return (
@@ -59,7 +59,7 @@ function Projects() {
         <LinkButton to="/newproject" text="Criar Projeto" />
       </div>
       {message && <Message type="success" msg={message} />}
-      {projectMessage && <Message type="remove" msg={projectMessage} />}
+      {projectMessage && <Message type="success" msg={projectMessage} />}
 
       <Container customClass="start">
         {projects.length > 0 &&
@@ -72,7 +72,7 @@ function Projects() {
               key={project.id}
               handleRemove={removeProject}
             />
-          ))}{" "}
+          ))}{' '}
         {!removeLoader && <Loading />}
         {removeLoader && projects.length === 0 && (
           <p>Ainda não há projetos cadastrados...</p>

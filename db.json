@@ -1,50 +1,5 @@
 {
-  "projects": [
-    {
-      "id": "8528",
-      "name": "Projeto 1",
-      "budget": "10000",
-      "category": {
-        "id": "1",
-        "name": "Infraestrutura"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "a8cd",
-      "name": "Projeto 2",
-      "budget": "10000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "cf63",
-      "name": "Projeto 3",
-      "budget": "10000",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "6bfc",
-      "name": "Projeto 4",
-      "budget": "10000",
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "cost": 0,
-      "services": []
-    }
-  ],
+  "projects": [],
   "categories": [
     {
       "id": "1",
@@ -61,6 +16,21 @@
     {
       "id": "4",
       "name": "Planejamento"
+    }
+  ],
+  "products": [],
+  "products_categories": [
+    {
+      "id": 1,
+      "name": "Fisico"
+    },
+    {
+      "id": 2,
+      "name": "Digital"
+    },
+    {
+      "id": 3,
+      "name": "Ambos"
     }
   ]
 }

@@ -5,6 +5,7 @@
   border-radius: 3px;
   width: 24%;
   margin: 0.5%;
+
 }
 
 .project_card h4 {
@@ -58,32 +59,39 @@
   align-items: center;
 }
 
-.project_card_actions a, 
+.project_card_actions a,
 .project_card_actions button {
   text-decoration: none;
   border: none;
   background-color: var(--color-secondary);
   color: var(--color-primary);
-  font-size: .9em;
-  padding: .6em 1em;
+  font-size: 0.9em;
+  padding: 0.6em 1em;
   margin-right: 1em;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: .5s;
+  transition: 0.5s;
   font-weight: 500;
 }
 
-.project_card_actions a:hover{
+.project_card_actions a:hover {
   background-color: var(--color-hover);
 }
 
 .project_card_actions button:hover {
-  background-color: #fd3456 ;
+  background-color: #fd3456;
 }
 
 .project_card_actions svg {
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 
+.remove_service {
+  background-color: #fd3456 !important;
+  transition: .2s !important;
+}
+.remove_service:hover {
+  background-color: #c21e39 !important;
+}

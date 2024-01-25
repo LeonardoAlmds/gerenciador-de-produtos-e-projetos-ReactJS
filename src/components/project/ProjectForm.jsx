@@ -1,19 +1,19 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import Input from "../form/Input";
-import Select from "../form/Select";
-import SubmitButton from "../form/SubmitButton";
-import styles from "./ProjectForm.module.css";
+import Input from '../form/Input';
+import Select from '../form/Select';
+import SubmitButton from '../form/SubmitButton';
+import styles from './ProjectForm.module.css';
 
 function ProjectForm({ handleSubmit, btnText, projectData }) {
   const [categories, setCategories] = useState([]);
   const [project, setProject] = useState(projectData || {});
 
   useEffect(() => {
-    fetch("http://localhost:5000/categories", {
-      method: "GET",
+    fetch('http://localhost:5000/categories', {
+      method: 'GET',
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
     })
       .then((resp) => resp.json())
@@ -50,7 +50,7 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
         name="name"
         placeholder="Insira o nome do projeto"
         handleOnChange={handleChange}
-        value={project.name ? project.name : ""}
+        value={project.name ? project.name : ''}
       />
       <Input
         type="number"
@@ -58,7 +58,7 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
         name="budget"
         placeholder="Insira o orçarmento total"
         handleOnChange={handleChange}
-        value={project.budget ? project.budget : ""}
+        value={project.budget ? project.budget : ''}
       />
 
       <Select
@@ -66,7 +66,7 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
         text="Selecione a categoria"
         options={categories}
         handleOnChange={handleCategory}
-        value={project.category ? project.category.id : ""}
+        value={project.category ? project.category.id : ''}
       />
 
       <SubmitButton text={btnText} />
