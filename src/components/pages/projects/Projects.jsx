@@ -3,11 +3,11 @@ import { useEffect, useState } from 'react';
 
 import styles from './Projects.module.css';
 
-import Message from '../layout/Message';
-import LinkButton from '../layout/LinkButton';
-import Container from '../layout/Container';
-import ProjectCard from '../project/ProjectCard';
-import Loading from '../layout/Loading';
+import Message from '../../layout/Message';
+import LinkButton from '../../layout/LinkButton';
+import Container from '../../layout/Container';
+import ProjectCard from '../../project/ProjectCard';
+import Loading from '../../layout/Loading';
 
 function Projects() {
   const [projects, setProjects] = useState([]);

@@ -5,12 +5,12 @@ import styles from './Project.module.css';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
-import Loading from '../layout/Loading';
-import Container from '../layout/Container';
-import Message from '../layout/Message';
-import ProjectForm from '../project/ProjectForm';
-import ServiceForm from '../service/ServiceForm';
-import ServiceCard from '../service/ServiceCard';
+import Loading from '../../layout/Loading';
+import Container from '../../layout/Container';
+import Message from '../../layout/Message';
+import ProjectForm from '../../project/ProjectForm';
+import ServiceForm from '../../service/ServiceForm';
+import ServiceCard from '../../service/ServiceCard';
 
 function Project() {
   const { id } = useParams();
@@ -184,6 +184,7 @@ function Project() {
                     handleSubmit={createService}
                     btnText="Insira um novo serviço"
                     projectData={project}
+                    type='service'
                   />
                 )}
               </div>

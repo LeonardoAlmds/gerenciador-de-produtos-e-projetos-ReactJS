@@ -5,7 +5,6 @@
   border-radius: 3px;
   width: 24%;
   margin: 0.5%;
-
 }
 
 .project_card h4 {
@@ -40,13 +39,16 @@
   margin-right: 5px;
 }
 
-.category_text .infraestrutura {
+.category_text .infraestrutura,
+.category_text .fisico {
   background-color: #ffaebc;
 }
-.category_text .desenvolvimento {
+.category_text .desenvolvimento,
+.category_text .digital {
   background-color: #a0e7e5;
 }
-.category_text .design {
+.category_text .design,
+.category_text .ambos {
   background-color: #b4f8c8;
 }
 .category_text .planejamento {
@@ -90,7 +92,7 @@
 
 .remove_service {
   background-color: #fd3456 !important;
-  transition: .2s !important;
+  transition: 0.2s !important;
 }
 .remove_service:hover {
   background-color: #c21e39 !important;

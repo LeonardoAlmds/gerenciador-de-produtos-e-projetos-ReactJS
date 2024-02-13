@@ -1,5 +1,24 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "id": "3fbd",
+      "name": "fasf",
+      "budget": "1321",
+      "category": {
+        "id": "1",
+        "name": "Infraestrutura"
+      },
+      "cost": 100,
+      "services": [
+        {
+          "name": "Servico",
+          "cost": "100",
+          "description": "faskhdkjashdjkasdas",
+          "id": "0c6b4738-c67a-4045-9c08-4a37a0fa69fa"
+        }
+      ]
+    }
+  ],
   "categories": [
     {
       "id": "1",
@@ -18,18 +37,50 @@
       "name": "Planejamento"
     }
   ],
-  "products": [],
-  "products_categories": [
+  "products": [
     {
-      "id": 1,
+      "id": "b630",
+      "name": "dsadsa",
+      "budget": "213",
+      "category": {
+        "id": "3",
+        "name": "Ambos"
+      },
+      "requirements": [],
+      "cost": 0,
+      "amount": 0
+    },
+    {
+      "id": "52d3",
+      "name": "jkasdghjkdfs",
+      "budget": "1900798217",
+      "category": {
+        "id": "2",
+        "name": "Digital"
+      },
+      "requirements": [
+        {
+          "name": "dsadsa",
+          "cost": "122",
+          "description": "dsadasdsa",
+          "id": "54308cc4-cd04-405e-b313-283f44e1d63c"
+        }
+      ],
+      "cost": 122,
+      "amount": 0
+    }
+  ],
+  "product_categories": [
+    {
+      "id": "1",
       "name": "Fisico"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Digital"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Ambos"
     }
   ]

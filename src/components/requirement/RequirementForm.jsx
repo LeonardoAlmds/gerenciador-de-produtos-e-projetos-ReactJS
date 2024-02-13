@@ -1,41 +1,40 @@
 import { useState } from 'react';
 import Input from '../form/Input';
 import SubmitButton from '../form/SubmitButton';
-
-function ServiceForm({ handleSubmit, btnText, projectData }) {
-  const [service, setService] = useState({});
+function RequirementForm({ handleSubmit, btnText, productData }) {
+  const [requirement, setRequirement] = useState({});
 
   function submit(e) {
     e.preventDefault();
-    projectData.services.push(service);
-    handleSubmit(projectData);
+    productData.requirements.push(requirement);
+    handleSubmit(productData);
   }
 
   function handleChange(e) {
-    setService({ ...service, [e.target.name]: e.target.value });
+    setRequirement({ ...requirement, [e.target.name]: e.target.value });
   }
 
   return (
     <form onSubmit={submit}>
       <Input
         type="text"
-        text="Nome do serviço"
+        text="Nome do requisito"
         name="name"
-        placeholder="Insira o nome do projeto"
+        placeholder="Insira o nome do requisito"
         handleOnChange={handleChange}
       />
       <Input
         type="number"
-        text="Custo do serviço"
+        text="Custo do requisito"
         name="cost"
         placeholder="Insira o valor total"
         handleOnChange={handleChange}
       />
       <Input
         type="text"
-        text="Descrição do serviço"
+        text="Descrição do requisito"
         name="description"
-        placeholder="Insira a descrição do projeto"
+        placeholder="Insira a descrição do requisito"
         handleOnChange={handleChange}
       />
 
@@ -44,4 +43,4 @@ function ServiceForm({ handleSubmit, btnText, projectData }) {
   );
 }
 
-export default ServiceForm;
+export default RequirementForm;
